@@ -1,0 +1,209 @@
+{
+   "account": "604972259071",
+   "detailType": "CodeBuild Build State Change",
+   "region": "ap-south-1",
+   "source": "aws.codebuild",
+   "time": "2022-11-16T09:05:07Z",
+   "notificationRuleArn": "arn:aws:codestar-notifications:ap-south-1:604972259071:notificationrule/872788882b3a5c9c74c80fff62284a8bf8b177f5",
+   "detail": {
+     "build-status": "SUCCEEDED",
+     "project-name": "app-admin-stage",
+     "build-id": "arn:aws:codebuild:ap-south-1:604972259071:build/app-admin-stage:2d3d9928-4c3f-416a-922c-06725b1453bd",
+     "additional-information": {
+       "cache": {
+         "type": "NO_CACHE"
+       },
+       "build-number": 7,
+       "timeout-in-minutes": 60,
+       "build-complete": true,
+       "initiator": "codepipeline/app-admin-stage",
+       "build-start-time": "Nov 16, 2022 8:57:10 AM",
+       "source": {
+         "type": "CODEPIPELINE"
+       },
+       "source-version": "arn:aws:s3:::serverless-codepipeline-buckets-ap-south-1-604972259071/app-admin-stage/SourceArti/9gkSiwN",
+       "artifact": {
+         "location": "arn:aws:s3:::serverless-codepipeline-buckets-ap-south-1-604972259071/app-admin-stage/DeployArti/8TY5YhH"
+       },
+       "environment": {
+         "image": "aws/codebuild/standard:5.0",
+         "privileged-mode": false,
+         "image-pull-credentials-type": "CODEBUILD",
+         "compute-type": "BUILD_GENERAL1_LARGE",
+         "type": "LINUX_CONTAINER",
+         "environment-variables": [
+           {
+             "name": "CF_EXECUTION_ROLE",
+             "type": "PLAINTEXT",
+             "value": "arn:aws:iam::604972259071:role/cf-execution-role-serverless"
+           },
+           {
+             "name": "DEPLOYMENT_BUCKET",
+             "type": "PLAINTEXT",
+             "value": "ucadmin-client-preprod-stage"
+           },
+           {
+             "name": "SUBNET_ID_TWO",
+             "type": "PLAINTEXT",
+             "value": "subnet-0f00059a9d73a7d90"
+           },
+           {
+             "name": "SECURITY_GROUP_ID",
+             "type": "PLAINTEXT",
+             "value": "sg-0abcb87a509f848df"
+           },
+           {
+             "name": "distribution_ID",
+             "type": "PLAINTEXT",
+             "value": "E1JCDFFPMSGNWK"
+           },
+           {
+             "name": "HOTELS_API_BASE_URL_stage",
+             "type": "PLAINTEXT",
+             "value": "https://hotels-stage-api-preprod.udchalo.com/api/"
+           },
+           {
+             "name": "NODE_ENV",
+             "type": "PLAINTEXT",
+             "value": "stage"
+           },
+           {
+             "name": "SUBNET_ID_ONE",
+             "type": "PLAINTEXT",
+             "value": "subnet-003c360b1784ca7c0"
+           },
+           {
+             "name": "UDCHALO_API_BASE_URL_stage",
+             "type": "PLAINTEXT",
+             "value": "https://stage-server-proxy-preprod.udchalo.com/admin"
+           },
+           {
+             "name": "CROSS_ACCOUNT_ROLE",
+             "type": "PLAINTEXT",
+             "value": "arn:aws:iam::604972259071:role/cross-account-role-serverless-deployment"
+           },
+           {
+             "name": "TARGET_ACCOUNT_ID",
+             "type": "PLAINTEXT",
+             "value": "604972259071"
+           }
+         ]
+       },
+       "logs": {
+         "group-name": "/aws/codebuild/app-admin-stage",
+         "stream-name": "2d3d9928-4c3f-416a-922c-06725b1453bd",
+         "deep-link": "https://console.aws.amazon.com/cloudwatch/home?region=ap-south-1#logEvent:group=/aws/codebuild/app-admin-stage;stream=2d3d9928-4c3f-416a-922c-06725b1453bd"
+       },
+       "phases": [
+         {
+           "phase-context": [],
+           "start-time": "Nov 16, 2022 8:57:10 AM",
+           "end-time": "Nov 16, 2022 8:57:10 AM",
+           "duration-in-seconds": 0,
+           "phase-type": "SUBMITTED",
+           "phase-status": "SUCCEEDED"
+         },
+         {
+           "phase-context": [],
+           "start-time": "Nov 16, 2022 8:57:10 AM",
+           "end-time": "Nov 16, 2022 8:57:10 AM",
+           "duration-in-seconds": 0,
+           "phase-type": "QUEUED",
+           "phase-status": "SUCCEEDED"
+         },
+         {
+           "phase-context": [
+             ": "
+           ],
+           "start-time": "Nov 16, 2022 8:57:10 AM",
+           "end-time": "Nov 16, 2022 8:57:15 AM",
+           "duration-in-seconds": 4,
+           "phase-type": "PROVISIONING",
+           "phase-status": "SUCCEEDED"
+         },
+         {
+           "phase-context": [
+             ": "
+           ],
+           "start-time": "Nov 16, 2022 8:57:15 AM",
+           "end-time": "Nov 16, 2022 8:57:17 AM",
+           "duration-in-seconds": 2,
+           "phase-type": "DOWNLOAD_SOURCE",
+           "phase-status": "SUCCEEDED"
+         },
+         {
+           "phase-context": [
+             ": "
+           ],
+           "start-time": "Nov 16, 2022 8:57:17 AM",
+           "end-time": "Nov 16, 2022 8:57:17 AM",
+           "duration-in-seconds": 0,
+           "phase-type": "INSTALL",
+           "phase-status": "SUCCEEDED"
+         },
+         {
+           "phase-context": [
+             ": "
+           ],
+           "start-time": "Nov 16, 2022 8:57:17 AM",
+           "end-time": "Nov 16, 2022 8:57:17 AM",
+           "duration-in-seconds": 0,
+           "phase-type": "PRE_BUILD",
+           "phase-status": "SUCCEEDED"
+         },
+         {
+           "phase-context": [
+             ": "
+           ],
+           "start-time": "Nov 16, 2022 8:57:17 AM",
+           "end-time": "Nov 16, 2022 8:59:42 AM",
+           "duration-in-seconds": 144,
+           "phase-type": "BUILD",
+           "phase-status": "SUCCEEDED"
+         },
+         {
+           "phase-context": [
+             ": "
+           ],
+           "start-time": "Nov 16, 2022 8:59:42 AM",
+           "end-time": "Nov 16, 2022 9:05:03 AM",
+           "duration-in-seconds": 321,
+           "phase-type": "POST_BUILD",
+           "phase-status": "SUCCEEDED"
+         },
+         {
+           "phase-context": [
+             ": "
+           ],
+           "start-time": "Nov 16, 2022 9:05:03 AM",
+           "end-time": "Nov 16, 2022 9:05:03 AM",
+           "duration-in-seconds": 0,
+           "phase-type": "UPLOAD_ARTIFACTS",
+           "phase-status": "SUCCEEDED"
+         },
+         {
+           "phase-context": [
+             ": "
+           ],
+           "start-time": "Nov 16, 2022 9:05:03 AM",
+           "end-time": "Nov 16, 2022 9:05:05 AM",
+           "duration-in-seconds": 2,
+           "phase-type": "FINALIZING",
+           "phase-status": "SUCCEEDED"
+         },
+         {
+           "start-time": "Nov 16, 2022 9:05:05 AM",
+           "phase-type": "COMPLETED"
+         }
+       ],
+       "queued-timeout-in-minutes": 480
+     },
+     "current-phase": "COMPLETED",
+     "current-phase-context": "[: ]",
+     "version": "1"
+   },
+   "resources": [
+     "arn:aws:codebuild:ap-south-1:604972259071:build/app-admin-stage:2d3d9928-4c3f-416a-922c-06725b1453bd"
+   ],
+   "additionalAttributes": {}
+ }

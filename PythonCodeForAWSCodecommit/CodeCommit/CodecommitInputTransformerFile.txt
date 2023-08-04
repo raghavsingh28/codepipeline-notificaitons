@@ -1,0 +1,63 @@
+Event pattern
+
+{
+  "source": ["aws.codecommit"],
+  "detail-type": ["CodeCommit Pull Request State Change"],
+  "detail": {
+    "event": ["pullRequestCreated", "pullRequestMerged", "pullRequestMergeStatusUpdated"]
+  }
+}
+
+Input path
+
+{
+  "Resource": "$.resources",
+  "SourceCommitID": "$.detail.sourceCommit",
+  "account": "$.account",
+  "author": "$.detail.authorDisplayName",
+  "callerUserArn": "$.detail.callerUserArn",
+  "changedFiles": "$.detail.references[0].commit.changedFiles",
+  "createdTimeStamp": "$.detail.createdTimeStamp",
+  "description": "$.detail.description",
+  "destinationReference": "$.detail.destinationReference",
+  "destination_commit": "$.detail.destinationCommit",
+  "event": "$.detail.event",
+  "lastModifiedDate": "$.detail.lastModifiedDate",
+  "mergedTimeStamp": "$.detail.mergedTimeStamp",
+  "notificationBody": "$.detail.notificationBody",
+  "pullRequestStatus": "$.detail.pullRequestStatus",
+  "repositories": "$.detail.respositoryNames",
+  "repositoryName": "$.detail.repositoryNames[0]",
+  "sourceReference": "$.detail.sourceReference",
+  "title": "$.detail.title"
+}
+
+Input template
+
+
+"Hello Team,"
+
+"CodeCommit Repository PR details"
+
+"Resource: <Resource>"
+"RepositoryName: <repositoryName>"
+"callerUserArn: <callerUserArn>"
+
+"lastModifiedDate: <lastModifiedDate>"
+"event: <event>"
+"PR-TitleName: <title>"
+"sourceReference: <sourceReference>"
+"destinationReference: <destinationReference>"
+"PullRequestStatus: <pullRequestStatus>"
+
+
+"Description: <description>"
+"SourceCommitID: <SourceCommitID>"
+"destination_commit: <destination_commit>"
+"changedFiles: <changedFiles>"
+
+"PR-Details-Notification: <notificationBody>"
+
+"Regards,"
+"DevOps Team"
+

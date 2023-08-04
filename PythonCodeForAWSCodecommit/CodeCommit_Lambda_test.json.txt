@@ -1,0 +1,33 @@
+{
+   "version": "0",
+   "id": "8151ab30-8724-784b-c711-38baa0a2069e",
+   "detail-type": "CodeCommit Pull Request State Change",
+   "source": "aws.codecommit",
+   "account": "604972259071",
+   "time": "2023-03-27T12:15:08Z",
+   "region": "ap-south-1",
+   "resources": [
+      "arn:aws:codecommit:ap-south-1:604972259071:uc-users-sls"
+   ],
+   "detail": {
+      "author": "arn:aws:iam::604972259071:user/raghvendrar-preprod",
+      "callerUserArn": "arn:aws:iam::604972259071:user/raghvendrar-preprod",
+      "creationDate": "Mon Mar 27 12:14:55 UTC 2023",
+      "destinationCommit": "d006b11e5fce5f4b2d1567d90f5386d64d5f7a4f",
+      "destinationReference": "refs/heads/sandbox",
+      "event": "pullRequestMergeStatusUpdated",
+      "isMerged": "True",
+      "lastModifiedDate": "Mon Mar 27 12:15:02 UTC 2023",
+      "mergeOption": "FAST_FORWARD_MERGE",
+      "notificationBody": "A pull request event occurred in the following AWS CodeCommit repository: uc-users-sls. User: arn:aws:iam::604972259071:user/raghvendrar-preprod. Event: Updated. Pull request name: 1212. Additional information: The pull request merge status has been updated. The status is merged. For more information, go to the AWS CodeCommit console https://ap-south-1.console.aws.amazon.com/codesuite/codecommit/repositories/uc-users-sls/pull-requests/1212?region=ap-south-1.",
+      "pullRequestId": "1212",
+      "pullRequestStatus": "Closed",
+      "repositoryNames": [
+         "uc-users-sls"
+      ],
+      "revisionId": "e02fc6e5a1825eda3ceb7f1e3cf0c7861b2b45def209304f327cf999733b7dfd",
+      "sourceCommit": "d1cef82e8972b5e28dc6d09478ab6b81d4930d2d",
+      "sourceReference": "refs/heads/sandboxdummy",
+      "title": "zdfsdfsd"
+   }
+}

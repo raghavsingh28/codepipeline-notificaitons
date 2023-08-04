@@ -1,0 +1,51 @@
+Event pattern
+
+{
+  "source": ["aws.codebuild"]
+}
+
+Input path
+
+{
+  "PR-Title": "$.pullRequest.title",
+  "PR-authorARN": "$.pullRequest.authorArn",
+  "PR-createdDate": "$.pullRequest.creationDate",
+  "PR-description": "$.pullRequest.description",
+  "PR-destinationCommit": "$.pullRequest.destinationCommit",
+  "PR-sourceCommit": "$.pullRequest.sourceCommit",
+  "account": "$.account",
+  "at": "$.time",
+  "author": "$.detail.author",
+  "build-status": "$.detail.build-status",
+  "completed-phase": "$.detail.completed-phase",
+  "completed-phase-status": "$.detail.completed-phase-status",
+  "destinationCommit": "$.detail.destinationCommit",
+  "pipeline": "$.detail.pipeline",
+  "project-name": "$.detail.project-name",
+  "pullRequestId": "$.detail.pullRequestId",
+  "repositories": "$.detail.respositoryNames",
+  "repositoryName": "$.detail.repositoryNames[0]",
+  "revisionId": "$.detail.revisionId",
+  "sourceCommit": "$.detail.sourceCommit",
+  "sourceVersion": "$.detail.sourceCommit",
+  "state": "$.detail.state"
+}
+
+
+Input template
+
+
+"HelloTeam"
+
+"CodeBuild changes Details"
+
+"AccountDetails :<account>"
+"Build-Status: <build-status>"
+"Completed-Phase: <completed-phase>"
+"Completed-Phase-Status : <completed-phase-status>"
+"Project-name: <project-name>"
+"state: <state>"
+"Time :<at>"
+
+"Regards"
+"DevOps Teams"

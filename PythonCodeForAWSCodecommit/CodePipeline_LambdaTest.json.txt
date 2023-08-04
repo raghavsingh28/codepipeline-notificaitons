@@ -1,0 +1,41 @@
+	{
+	  "account": "604972259071",
+	  "detailType": "CodePipeline Action Execution State Change",
+	  "region": "ap-south-1",
+	  "source": "aws.codepipeline",
+	  "time": "2023-02-28T18:07:37Z",
+	  "notificationRuleArn": "arn:aws:codestar-notifications:ap-south-1:604972259071:notificationrule/afc989724052113b6ff863c9ec4f03de59a1f28d",
+	  "detail": {
+	    "pipeline": "app-admin-master",
+	    "execution-id": "769f3bf4-92de-4def-85e8-7bb04571e885",
+	    "stage": "SourceCode",
+	    "execution-result": {
+	      "external-execution-url": "https://console.aws.amazon.com/codecommit/home?region=ap-south-1#/repository/app-admin/commit/0ab551f7c31027c564f2d9b0f6d34920407b83f0",
+	      "external-execution-summary": "Squashed commit of the following \n\ncommit d51abeea \nAuthor: Yash Parmar <yash.parmar@udchalo.com> \nDate: Mon Feb 27 2023 13:12:27 GMT+0530 (India Standard Time) \n\n    duplicate function defination\n\n\ncommit 0d407685 \nAuthor: Yash Parmar <yash.parmar@udchalo.com> \nDate: Mon Feb 27 2023 13:04:00 GMT+0530 (India Standard Time) \n\n    Merge branch 'master' of https://git-codecommit.ap-south-1.amazonaws.com/v1/repos/app-admin into ntd2-revmerge-m2s\n\n\ncommit c1ad2a91 \nAuthor: amol-udchalo <amol.patil@udchalo.com> \nDate: Fri Feb 24 2023 11:50:10 GMT+0530 (India Standard Time) \n\n    sequence changed\n\n\ncommit bcceddd5 \nAuthor: Ajay Awahar <ajay.awachar@udchalo.com> \nDate: Mon Feb 20 2023 17:54:13 GMT+0530 (India Standard Time) \n\n    handle for none\n\n\ncommit 87be31a7 \nAuthor: rakesh yadav <rakesh.yadav@udchalo.com> \nDate: Mon Feb 20 2023 14:52:48 GMT+0530 (India Standard Time) \n\n    Squashed commit of the following \n\ncommit b28b8b73 \nAuthor: Rakesh Yadav <rakesh.yadav@udchalo.com> \nDate: Mon Feb 20 2023 11:58:14 GMT+0530 (India Standard Time) \n\n    suraksha claim added\n\n\ncommit 8db4ce8d \nAuthor: Rakesh Yadav <rakesh.yadav@udchalo.com> \nDate: Fri Feb 17 2023 14:25:51 GMT+0530 (India Standard Time) \n\n    claim window changes\n\n\ncommit c80a6546 \nAuthor: Rakesh Yadav <rakesh.yadav@udchalo.com> \nDate: Fri Feb 17 2023 11:11:50 GMT+0530 (India Standard Time) \n\n    claim window updated added\n\n\n\ncommit 693bd419 \nAuthor: Ajay Awahar <ajay.awachar@udchalo.com> \nDate: Mon Feb 20 2023 14:28:08 GMT+0530 (India Standard Time) \n\n    ts lin",
+	      "external-execution-id": "0ab551f7c31027c564f2d9b0f6d34920407b83f0"
+	    },
+	    "output-artifacts": [
+	      {
+		"name": "SourceArtifact",
+		"s3location": {
+		  "bucket": "serverless-codepipeline-buckets-ap-south-1-604972259071",
+		  "key": "app-admin-master/SourceArti/BvCm4By"
+		}
+	      }
+	    ],
+	    "action": "SourceProject",
+	    "state": "SUCCEEDED",
+	    "region": "ap-south-1",
+	    "type": {
+	      "owner": "AWS",
+	      "provider": "CodeCommit",
+	      "category": "Source",
+	      "version": "1"
+	    },
+	    "version": 2
+	  },
+	  "resources": [
+	    "arn:aws:codepipeline:ap-south-1:604972259071:app-admin-master"
+	  ],
+	  "additionalAttributes": {}
+	}
